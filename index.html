@@ -9,7 +9,6 @@
 
         .items {
             position: relative;
-            background-color: rgb(128, 133, 120);
             float: left;
             <!-- padding: 15vw 3vw;-->
         }
@@ -19,9 +18,19 @@
             height: auto;
         }
 
-        .item {
+        .item:nth-child(odd) {
             width: 100%;
             height: auto;
+            display: inline-block;
+            background-color: rgb(128, 133, 120);
+            padding: 3vw 3vw;
+        }
+
+        .item:nth-child(even) {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            background-color: white;
         }
 
         .plants {
@@ -86,7 +95,7 @@
             float:left;
             width:25%;
             position: relative;
-            left: 15%;
+            left: 5%;
             height: auto;
         }
 
@@ -94,13 +103,17 @@
             float: left;
             width: 50%;
             position: relative;
-            left: 20%;
+            left: 10%;
             font-size: 2.5vw;
             text-align: justify;
         }
 
         .description {
             font-size: 2.5vw;
+            text-align: justify;
+            width: 85%;
+            position: relative;
+            left: 5%;
         }
 
         .know-more {
@@ -138,6 +151,18 @@
                 Contamos com equipes parceiras para realizar a implanta&ccedil;&atilde;o de grandes projetos e
                 grandes
                 sonhos em todo o Brasil!
+            </p>
+        </div>
+        <div class="item">
+            <p class="title">PORTIF&Oacute;LIO</p>
+            <p class="description">
+                Al&eacute;m de centenas de resid&ecirc;ncias, est&atilde;o entre nossos clientes EMPRESAS como: MVK
+                metal&uacute;rgica (Mineiro do Tiet&ecirc;-SP), Cartonagem Jauense e Hotel Vila Real (Ja&uacute;-SP)
+                CONDOM&Iacute;NIOS e Macropaisagismo: Palmeiras Imperiais (Salto-SP), Jardim Bot&acirc;nico II
+                (Barretos-SP), Loteamento Reserva do Parque (Itatiba-SP) e Fazenda S&atilde;o Vicente (Campinas-SP)
+            </p>
+            <p class="description">
+                Nosso prop&oacute;sito &eacute; Criar espa&ccedil;os VERDES e conectar pessoas &agrave;&nbsp;NATUREZA!
             </p>
         </div>
     </div>
