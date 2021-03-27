@@ -138,6 +138,33 @@
             padding-top: 7vw;
             padding-left: 3vw;
         }
+
+        .thumb-row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 4px;
+          padding-left: 5%;
+        }
+
+        .thumb-column {
+          flex: 25%;
+          max-width: 22%;
+          padding: 0 4px;
+        }
+
+        .thumb-column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+          .thumb-column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+
     </style>
 </head>
 <body>
@@ -146,7 +173,8 @@
         <img src="garden-logo-shorter.jpeg" alt="Garden Jau Logo" class="logo">
         <div class="info-box">
             <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5514991697878">
-                <img src="whatsapp-icon.png" class="social-icon"/><div class="social-address">(14) 99169-7878</div>
+                <img src="whatsapp-icon.png" class="social-icon"/>
+                <div class="social-address">(14) 99169-7878</div>
             </a>
         </div>
     </div>
@@ -174,6 +202,20 @@
             <p class="description">
                 Nosso prop&oacute;sito &eacute; Criar espa&ccedil;os VERDES e conectar pessoas &agrave;&nbsp;NATUREZA!
             </p>
+            <div class="thumb-row">
+                <div class="thumb-column">
+                    <img src="casa-lago.jpg"/>
+                </div>
+                <div class="thumb-column">
+                    <img src="moderna-cond-alvorada.jpg"/>
+                </div>
+                <div class="thumb-column">
+                    <img src="jardim-fachada.jpg"/>
+                </div>
+                <div class="thumb-column">
+                    <img src="hotel-vila-real.jpg"/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
