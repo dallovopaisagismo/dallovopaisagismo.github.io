@@ -88,8 +88,16 @@
             height: auto;
         }
 
+        .profile_title {
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            color: white;
+        }
+
         .profile_text {
             float: left;
+            color: white;
             width: 50%;
             position: relative;
             left: 10%;
@@ -158,10 +166,17 @@
           width: 100%;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1080px) {
           .thumb-column {
             flex: 100%;
             max-width: 45%;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .thumb-column {
+            flex: 100%;
+            max-width: 90%;
           }
         }
 
@@ -180,7 +195,7 @@
     </div>
     <div class="items">
         <div class="item">
-            <p class="title">SOBRE N&Oacute;S</p>
+            <p class="profile_title">SOBRE N&Oacute;S</p>
             <img src="caro_le_dallovo.jpeg" class="profile_pic">
             <p class="profile_text">
                 Carol Dall&apos;Ovo, Arquiteta Urbanista e Paisagista, formada no ano 2000, fundou a Garden Ja&uacute;
