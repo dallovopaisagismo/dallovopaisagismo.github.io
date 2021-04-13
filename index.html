@@ -33,18 +33,22 @@
 
         a:visited {
             color: inherit;
+            text-decoration: none;
         }
 
         a:link {
             color: inherit;
+            text-decoration: none;
         }
 
         a:hover {
             color: inherit;
+            text-decoration: none;
         }
 
         a:active {
             color: inherit;
+            text-decoration: none;
         }
 
         .title {
@@ -127,12 +131,6 @@
           padding: 0 4px;
         }
 
-        .thumb-column img {
-          margin-top: 8px;
-          vertical-align: middle;
-          width: 100%;
-        }
-
         @media screen and (max-width: 1080px) {
           .thumb-column {
             flex: 100%;
@@ -168,6 +166,27 @@
 
         .main {
             margin-top: 7vw; /* Add a top margin to avoid content overlay over navbar */
+        }
+
+        .gallery_name {
+            font-size: 2vw;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 40%;
+            visibility: hidden;
+        }
+
+        .gallery_img {
+            width: 100%;
+        }
+
+        .gallery_wrap:hover .gallery_name {
+          visibility: visible;
+        }
+
+        .gallery_wrap:hover .gallery_img {
+          opacity: 0.5;
         }
     </style>
 </head>
@@ -213,18 +232,46 @@
                 </p>
                 <div class="thumb-row">
                     <div class="thumb-column">
-                        <a href="gallery.html?id=casa-lago">
-                            <img src="assets/images/casa-lago/1.jpg"/>
+                        <a class="gallery_wrap" href="gallery.html?id=casa-lago">
+                            <img class="gallery_img" src="assets/images/casa-lago/thumb.jpg"/>
+                            <p class="gallery_name">Casa Lago</p>
                         </a>
                     </div>
                     <div class="thumb-column">
-                        <img src="moderna-cond-alvorada.jpg"/>
+                        <a class="gallery_wrap" href="gallery.html?id=condominio-alvorada">
+                            <img class="gallery_img" src="assets/images/condominio-alvorada/thumb.jpg"/>
+                            <p class="gallery_name">Moderna Condominio Alvorada</p>
+                        </a>
                     </div>
                     <div class="thumb-column">
-                        <img src="jardim-fachada.jpg"/>
+                        <a class="gallery_wrap" href="gallery.html?id=jardins-fachada">
+                            <img class="gallery_img" src="assets/images/jardins-fachada/thumb.jpg"/>
+                            <p class="gallery_name">Jardins de Fachada</p>
+                        </a>
                     </div>
                     <div class="thumb-column">
-                        <img src="hotel-vila-real.jpg"/>
+                        <a class="gallery_wrap" href="gallery.html?id=hotel-vila-real-jau">
+                            <img class="gallery_img" src="assets/images/hotel-vila-real-jau/thumb.jpg"/>
+                            <p class="gallery_name">Hotel Vila Real Ja&uacute;</p>
+                        </a>
+                    </div>
+                    <div class="thumb-column">
+                        <a class="gallery_wrap" href="gallery.html?id=lazer-na">
+                            <img class="gallery_img" src="assets/images/lazer-na/1.jpg"/>
+                            <p class="gallery_name">&Aacute;rea de lazer N&amp;A</p>
+                        </a>
+                    </div>
+                    <div class="thumb-column">
+                        <a class="gallery_wrap" href="gallery.html?id=residencia-sv">
+                            <img class="gallery_img" src="assets/images/residencia-sv/1.jpg"/>
+                            <p class="gallery_name">Resid&ecirc;ncia S&amp;V</p>
+                        </a>
+                    </div>
+                    <div class="thumb-column">
+                        <a class="gallery_wrap" href="gallery.html?id=residencia-tf">
+                            <img class="gallery_img" src="assets/images/residencia-tf/thumb.jpg"/>
+                            <p class="gallery_name">Resid&ecirc;ncia T&amp;F</p>
+                        </a>
                     </div>
                 </div>
                 <p class="description">
