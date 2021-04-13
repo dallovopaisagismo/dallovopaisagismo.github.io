@@ -131,20 +131,6 @@
           padding: 0 4px;
         }
 
-        @media screen and (max-width: 1080px) {
-          .thumb-column {
-            flex: 100%;
-            max-width: 45%;
-          }
-        }
-
-        @media screen and (max-width: 600px) {
-          .thumb-column {
-            flex: 100%;
-            max-width: 90%;
-          }
-        }
-
         .logo {
             float:left;
             width:20%;
@@ -188,6 +174,41 @@
         .gallery_wrap:hover .gallery_img {
           opacity: 0.5;
         }
+
+        @media screen and (max-width: 1080px) {
+          .thumb-column {
+            flex: 100%;
+            max-width: 45%;
+          }
+
+          .title {
+            font-size: 7vw;
+           }
+
+          .profile_title {
+                font-size: 7vw;
+            }
+
+            .profile_text {
+                font-size: 5vw;
+            }
+
+          .description {
+            font-size: 5vw;
+          }
+
+          .gallery_name {
+            font-size: 5vw;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .thumb-column {
+            flex: 100%;
+            max-width: 90%;
+          }
+        }
+
     </style>
 </head>
 <body>
