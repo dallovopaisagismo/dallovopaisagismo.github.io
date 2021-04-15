@@ -1,247 +1,15 @@
+<html>
 <head>
-    <style>
-        * {
-            font-family: "Segoe UI", Frutiger, "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .header {
-            position: relative;
-            width: 100%;
-        }
-
-        .items {
-            position: relative;
-            float: left;
-            display: block;
-        }
-
-        .item:nth-child(odd) {
-            width: 100%;
-            height: auto;
-            display: inline-block;
-            background-color: white;
-            padding-bottom: 3vw;
-        }
-
-        .item:nth-child(even) {
-            width: 100%;
-            height: auto;
-            display: inline-block;
-            background-color: rgb(128, 133, 120);
-            padding-bottom: 3vw;
-        }
-
-        a:visited {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        a:link {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        a:active {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .title {
-            color: white;
-            text-align: center;
-            font-size: 3vw;
-            font-weight: bold;
-        }
-
-        .profile_pic {
-            width:25%;
-            position: relative;
-            left: 37%;
-            height: auto;
-        }
-
-        .profile_title {
-            text-align: center;
-            font-size: 3vw;
-            font-weight: bold;
-        }
-
-        .profile_text {
-            font-size: 2.5vw;
-            text-align: justify;
-            width: 85%;
-            position: relative;
-            left: 5%;
-        }
-
-        .description {
-            font-size: 2.5vw;
-            text-align: justify;
-            width: 85%;
-            position: relative;
-            left: 5%;
-            color: white;
-        }
-
-        .info-box {
-            position: absolute;
-            top: 2vw;
-            right: 5vw;
-            height: 1vw;
-            width: 22vw;
-        }
-
-        .social-icon {
-            float:left;
-            max-width: 10%;
-            height: auto;
-        }
-
-        .social-address {
-            float:left;
-            text-decoration: none;
-            font-size: 2.2vw;
-            text-align: center;
-            padding-left: 1vw;
-        }
-
-        .whatsapp {
-            border-radius: 25px;
-            text-decoration: none;
-            position: absolute;
-            padding: 1vw;
-            background-color: #25D366;
-        }
-
-        .thumb-row {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 4px;
-          padding-left: 5%;
-        }
-
-        .thumb-column {
-          flex: 25%;
-          max-width: 22%;
-          padding: 4px 4px;
-        }
-
-        .logo {
-            float:left;
-            width:20%;
-            position: relative;
-            left: 40%;
-            height: auto;
-            display: block;
-        }
-
-        #navbar {
-          background-color: rgb(128, 133, 120);
-          position: fixed;
-          left:0;
-          right:0;
-          top:0;
-          height:7vw;
-          z-index:3;
-        }
-
-        .main {
-            margin-top: 7vw; /* Add a top margin to avoid content overlay over navbar */
-        }
-
-        .gallery_name {
-            font-size: 2vw;
-            position: absolute;
-            bottom: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            visibility: hidden;
-        }
-
-        .gallery_img {
-            width: 100%;
-        }
-
-        .gallery_wrap {
-            position: relative;
-            text-align: center;
-        }
-
-        .gallery_wrap:hover .gallery_name {
-          visibility: visible;
-        }
-
-        .gallery_wrap:hover .gallery_img {
-          opacity: 0.5;
-        }
-
-        @media screen and (max-width: 1080px) {
-
-            #navbar {
-              height:14vw;
-            }
-
-            .logo {
-                left: 5%;
-                width:40%;
-                height:14vw;
-            }
-
-            .info-box {
-                width: 46vw;
-            }
-
-            .social-address {
-                font-size: 5vw;
-            }
-
-          .thumb-column {
-            flex: 100%;
-            max-width: 45%;
-          }
-
-          .title {
-            font-size: 7vw;
-           }
-
-          .profile_title {
-                font-size: 7vw;
-            }
-
-            .profile_text {
-                font-size: 5vw;
-            }
-
-          .description {
-            font-size: 5vw;
-          }
-
-          .gallery_name {
-            font-size: 5vw;
-          }
-        }
-
-        @media screen and (max-width: 600px) {
-          .thumb-column {
-            flex: 100%;
-            max-width: 90%;
-          }
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="content">
     <div id="navbar">
-        <img src="garden-logo-retang.png" alt="Garden Jau Logo" class="logo">
+        <a href="index.html">
+            <img src="garden-logo-retang.png" alt="Garden Jau Logo" class="logo">
+        </a>
         <div class="info-box">
-            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5514991697878">
+            <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5514991697878">
                 <img src="whatsapp-icon.png" class="social-icon"/>
                 <div class="social-address">(14) 99169-7878</div>
             </a>
@@ -249,12 +17,12 @@
     </div>
     <div class="main">
         <div>
-            <img src="capa.jpeg" class="header">
+            <img src="assets/images/capa.jpg" class="header">
         </div>
         <div class="items">
             <div class="item">
                 <p class="profile_title">Sobre n&oacute;s</p>
-                <img src="caro_le_dallovo.jpeg" class="profile_pic">
+                <img src="assets/images/caro_le_dallovo.jpg" class="profile_pic">
                 <p class="profile_text">
                     Carol Dall&apos; Ovo, arquiteta urbanista e paisagista, formada no ano 2000, fundou a ent&atilde;o
                     Garden Ja&uacute; Paisagismo em 2003 ao lado de seu marido, o tamb&eacute;m paisagista, Leonardo
@@ -328,3 +96,4 @@
     </div>
 </div>
 </body>
+</html>
